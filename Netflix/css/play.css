@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background:#1f1f1f;
+}
+.main img{
+    width: 71px;
+    height: 75px;
+    transform: rotate(180deg);
+    rotate: 180;
+    color:#ECECFF;
+
+}
+.main .nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.maintext h1{    
+    font-family: 'Roboto';
+    color: #ECECFF;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 31.2px;
+    padding: 2% 1%;
+}
+.play img {
+    max-width: 100%;
+    object-fit: contain;
+}
+#img1{
+    width: 50px;
+    height: 30px;
+}
+#img2{
+    width: 1700px; 
+    height: 20px;
+    margin-top: 6px;
+}
+#img3{
+    width: 30px;
+}
+.video {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.last{
+    display: flex;
+    justify-content: center;
+}
+
+.video img{
+    padding-top: 6px;
+}
+@media only screen and (max-width: 500px) {
+.body{
+    margin: 0;
+    padding: 0;
+}
+.nav img{
+    width: 40px;
+    height: 40px;
+}
+.nav h1{
+    font-size: 20px;
+}
+.video img{
+    margin-top: 6px;
+}
+#img1{
+    width: 20px;
+    height: 20px;
+}
+#img2{
+    width: 420px; 
+    height: 20px;
+}
+#img3{
+    width: 20px;
+    height: 20px;
+}
+.last{
+    padding-top: 10px;
+}
+.last img{
+    width: 120px;
+    height: 20px;
+}
+}

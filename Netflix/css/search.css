@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background:#1f1f1f;
+    min-width: 100%;
+    object-fit: contain;
+}
+
+.sidebar{
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    width: 80px;
+    transition: .4s linear;
+    padding: 10px 14px;
+}
+
+.top-section{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+
+.sidebar-link{
+    display: flex;
+    align-items: center;
+    height: 52px;
+    margin-bottom: 12px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.sidebar-link i{
+    min-width: 52px;
+    font-size: 18px;
+    text-align: center;
+}
+.main{
+    color: white;
+    margin-left: 5.5%;
+}
+
+.search input[type=text]{
+    width: 100%;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    height:40px;
+    border: none;
+    background-color: #D9D9D933;
+}
+     
+.search{
+    position: relative;
+    margin:0;
+    padding-top: 30px;
+    margin-right: 52px;
+}
+     
+.search button{
+    color: white;
+    background-color: #D9D9D933;
+    width: 29px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    margin-left: 4.3%;
+    margin-left: 20px;
+}
+.maintext h1{    
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 31.2px;
+    padding: 2% 1%;
+}
+.row{
+    max-width: 100%;
+    height: auto;
+}
+.row_posters{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    transition: transform 450ms;
+}
+.row_posters:hover{
+    transform: scale(0.98);
+}
+.row_posters h2{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 36px;
+}
+.row_posters img , h2,a{
+    
+    align-self: center;
+}
+.row_poster{
+    max-width: 100%;
+}
+
+.footer{
+    display: flex;
+    background-color:black;
+    color: white;
+    font-family: 'Work Sans';
+    padding-left: 8%;
+    padding-top: 60px;
+    height: 400px;
+}
+.footer h1{
+    padding: 3% 0;
+font-weight: 800;
+font-size: 40px;
+}
+.footer p{
+    text-align: justify;
+    padding: 5px 0;
+    max-width: 500px;
+font-weight: 300;
+font-size: 15px;
+padding-bottom: 10px;
+}
+.footer .text{
+    margin-right: 250px;
+}
+.footer .social img{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.footer .col{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 50px;
+}
+.footer .col a{
+    text-decoration: none;
+    color: #777;
+    margin-top: 15px;
+    font-size: 14px;
+
+}
+  @media only screen and (max-width: 500px) {
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    .sidebar {
+        display: flex;
+        justify-content: space-between;
+        height: 7vh;
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        transition: .4s linear;
+        padding: 10px 30px;
+    }
+    .top-menu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .main{
+        padding: 0;
+        margin: 0;
+        padding-top: 70px;
+    }
+    .search{
+        margin: 3% 10%;
+    }
+    .search input[type=text]{
+        font-size: 15px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .search button{
+        margin-right: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .maintext h1{
+        font-size: 30px;
+        margin: 9% 4%; 
+    }
+    
+  .sidebar-link{
+    align-items: center;
+    height: 52px;
+    margin-bottom: 12px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.sidebar-link i{
+    min-width: 52px;
+    font-size: 18px;
+    text-align: center;
+}
+.row{
+    
+    width: 100%;
+}
+.row h2{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.row_posters{
+    display: flex;
+    padding: 0;
+    margin: 5% 0;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+.row_poster{
+    width: 100%;
+    object-fit: contain;
+    transition: transform 450ms;
+}
+.footer{
+    background-color:#1f1f1f;
+    color: white;
+    font-family: 'Work Sans';
+    margin-left: 4.3%;
+    padding-top: 10px;
+    height: 250px;
+}
+.footer h1{
+    padding: 5% 0;
+font-weight: 800;
+font-size: 20px;
+}
+.footer p{
+    text-align: justify;
+    padding: 5px 0;
+    max-width: 500px;
+font-weight: 300;
+font-size: 10px;
+padding-bottom: 10px;
+}
+.footer .text{
+    display: flex;
+}
+.footer .social{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.footer .social img{
+    width: 20px;
+    height: 20px;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.footer .col{
+    display: none;
+}
+  }
